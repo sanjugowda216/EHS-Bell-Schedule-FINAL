@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>EHS Bell Schedule</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" type="image/png" href="imageehs.png">
+</head>
+<style>
+  /* style */
+  nav {
+    background-color: rgba(255, 255, 255, 0.9);
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    left: 0px;
+    top: 0px;
+    margin-bottom: 10px;
+  }
+
+  nav a {
+    float: left;
+    display: block;
+    color: #197E30;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 50px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  nav img {
+    width: 60px;
+    float: left;
+    margin: 10px 15px;
+  }
+
+  nav a:hover {
+    background-color: #5DAA54;
+    color: darkgreen;
+  }
+</style>
+
+<body>
+  <nav>
+    <img src="imageehs.png">
+    <a href="ehsschedule.html">EHS Schedule</a>
+    <a href="schedule.html">Edit Class Names</a>
+    <a href="rest.html">Restaurants Directory</a>
+    <a href="https://forms.gle/gbJxu8BUHACMzLgz8">Feedback Form</a>
+  </nav>
+  <div class="container">
+    <center>
+      <time id="current-time"></time>
+    </center>
+    <center>
+      <label id="classy" style="font-family: Arial, sans-serif;">Break</label>
+    </center>
+    <center>
+      <label id="countdown"></label>
+    </center>
+  </div>  
+ 
+  <script src="script.js"></script>
+</body>
+
+</html>
